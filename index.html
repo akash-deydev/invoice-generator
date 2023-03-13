@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="logo">
+        </div>
+        <div>
+            <h1 class="invoice-title">Tax Invoice</h1>
+        </div>
+    </div>
+    <div class="address-invoice">
+        <p>Customer Address Here</p>
+        <h3 style="color: #f2f2f2;">INVOICE NO. 99663 / 2017-18</h3>
+    </div>
+    <section style="margin: 20px 0px;">
+        <table style="width: 100%; border: 1px solid black;">
+            <thead style="background-color: blue;">
+            <tr style="color: #f2f2f2;">
+                <th>Billing Address</th>
+                <th>Shipping Address</th>
+            </tr>
+        </thead>
+        <tbody style="height: 100px;">
+            <tr>
+                <td> <h5>Tech Guru Plus,</h5><p>D-1234 Okhla Industrial State,</p> <p>New Delhi 110020 </p> <p>Phone 12345678757</p>  <b>GSTIN: 1325536747463</b> </td>
+                <td> <h5>Tech Guru Plus,</h5><p>D-1234 Okhla Industrial State,</p> <p>New Delhi 110020 </p> <p>Phone 12345678757</p>  <b>GSTIN: 1325536747463</b> </td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+    <div class="invoice-details-container">
+        <div class="invoice-details-row">
+            <p>Invoice Date</p>
+            <p>Payment Terms</p>
+            <p>Due Date</p>
+        </div>
+        <div class="invoice-details">
+            <p>Apr 8 2017</p>
+            <p>30 Days</p>
+            <p>May 8 2017</p>
+        </div>
+    </div>
+    <section class="items-container">
+        <table style="width: 100%; border: 1px solid black;">
+            <thead style="background-color: blue;">
+            <tr class="items-heading">
+                <th colspan="2">Description</th>
+                <th>HSN Code</th>
+                <th>Qty</th>
+                <th>Unit Rate</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr style="text-align: center;">
+                    <td colspan="2">Item 1</td>
+                    <td>4564</td>
+                    <td>3.00</td>
+                    <td>50.00</td>
+                    <td>150.00</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2">Item 2</td>
+                    <td>4154</td>
+                    <td>2.00</td>
+                    <td>100.00</td>
+                    <td>200.00</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2">Item 3</td>
+                    <td>7878</td>
+                    <td>3.00</td>
+                    <td>200.00</td>
+                    <td>600.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="6"><p>Thank You for your business</p></td>
+                    <td colspan="3"> <b>Total</b></td>
+                    <td style="text-align: center;">950</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Frieght Charges</td>
+                    <td style="text-align: center;">500</td>
+                 </tr>
+                 <tr>
+                    <td colspan="3"> <b>Grand Total</b> </td>
+                    <td style="text-align: center;">1,450</td>
+                 </tr>
+                 <tr>
+                    <td colspan="3">SGST @ 9%</td>
+                    <td style="text-align: center;">131</td>
+                 </tr>
+                 <tr>
+                    <td colspan="3">CGST @ 9%</td>
+                    <td style="text-align: center;">131</td>
+                 </tr>
+                 <tr>
+                    <td colspan="3"> <b>GRAND TOTAL(Including Tax)</b> </td>
+                    <td style="text-align: center;"> <b>1,712</b> </td>
+                 </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="footer">
+        <table style="width: 100%;">
+            <thead>
+                <th>
+                    <td></td>
+                </th>
+                <th>
+                    <td></td>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="line-height: 1.5;"> <p> <b> <u>Amount in words:</u> </b> </p>
+                    <p>One Thousand tweleve hundred and seven only.</p>
+                    <p> <b>Please make the cheque in favour of "ABC Company Pvt Ltd."</b> </p>
+                    </td>
+                    <td style="text-align: right; line-height: 3;"> <b>For ABC Compnay Pvt Ltd.</b>
+                        <span><img class="dummy-sign" src="./images/dummy-sign2.png" alt="sign"></span>
+                    <p>Authorised Signatory</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="footer-div">
+    </div>
+    
+</body>
+</html>
